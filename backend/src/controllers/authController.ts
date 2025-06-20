@@ -193,3 +193,42 @@ export const refreshToken = async (req: Request, res: Response): Promise<void> =
     }
   }
 };
+
+// Add this to your existing authController.ts
+export const getCurrentUser = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const userId = req.userId;
+    
+    if (!userId) {
+      res.status(401).json({ message: 'Unauthorized' });
+      return;
+    }
+
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: {
+        id: true,
+        email: true,
+        displayName: true,
+        avatarUrl: true,
+        createdAt: true
+      }
+    });
+
+    if (!user) {
+      res.status(404).json({ message: 'User not found' });
+      return;
+    }
+
+    // Add initial letter as a fallback
+    const userWithInitial = {
+      ...user,
+      initial: user.displayName ? user.displayName.charAt(0).toUpperCase() : 'U'
+    };
+
+    res.json(userWithInitial);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Server error' });
+  }
+};
