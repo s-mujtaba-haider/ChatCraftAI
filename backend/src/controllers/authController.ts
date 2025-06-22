@@ -150,7 +150,7 @@ export const refreshToken = async (req: Request, res: Response): Promise<void> =
         avatarUrl: user.avatarUrl,
       },
       config.JWT_SECRET,
-      { expiresIn: '15m' }
+      { expiresIn: '60m' }
     );
 
     const newRefreshToken = jwt.sign(
