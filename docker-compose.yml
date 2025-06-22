@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: pakistan124
       POSTGRES_DB: chatcraftai
     volumes:
       - pgdata:/var/lib/postgresql/data
@@ -23,7 +23,7 @@ services:
       - ./backend:/app
     environment:
       DATABASE_URL: postgres://postgres:postgres@postgres:5432/chatcraftai
-      JWT_SECRET: supersecretjwt
+      JWT_SECRET: 56789rtyhu876
     command: npm run dev
 
   frontend:
