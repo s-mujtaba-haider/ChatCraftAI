@@ -82,6 +82,18 @@ docker compose up --build
 
 ---
 
+## 🎥 Demo Videos
+
+> Click to download or view each video.
+
+1. [▶️ Login & Register Demo](Videos/LoginRegister.mp4)
+2. [▶️ Chat Functionality Demo](Videos/Funactionality.mp4)
+3. [▶️ Backend Overview](Videos/backend.mp4)
+4. [▶️ Frontend Overview](Videos/frontend.mp4)
+
+
+---
+
 ## 👤 Team & Credits
 
 Developed by [**Mujtaba Haider**](https://github.com/s-mujtaba-haider).
