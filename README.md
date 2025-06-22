@@ -87,9 +87,9 @@ docker compose up --build
 > Click to download or view each video.
 
 1. [▶️ Login & Register Demo](Videos/LoginRegister.mp4)
-2. [▶️ Chat Functionality Demo](Videos/Funactionality.mp4)
-3. [▶️ Backend Overview](Videos/backend.mp4)
-4. [▶️ Frontend Overview](Videos/frontend.mp4)
+3. [▶️ Chat Functionality Demo](Videos/Funactionality.mp4)
+4. [▶️ Backend Overview](Videos/backend.mp4)
+5. [▶️ Frontend Overview](Videos/frontend.mp4)
 
 
 ---
