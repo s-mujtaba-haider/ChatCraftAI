@@ -1,4 +1,4 @@
-# 🧠 ChatCraftAI
+# ChatCraftAI
 
 **ChatCraftAI** is a full-stack AI-powered real-time chat application with 1:1 and group messaging, typing indicators, grammar correction, conversation summaries, and AI-suggested replies. Built with **Next.js**, **Express.js**, **PostgreSQL**, **Prisma**, **Socket.IO**, and Docker.
 
